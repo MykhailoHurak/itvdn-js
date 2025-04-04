@@ -6,10 +6,27 @@
     <title>Document</title>
     <style>
         div {
-            background-color: yellow;
+            background-color: red;
             margin: 30px;
             padding: 30px;
             font-size: 30px;
+        }
+
+        #myDiv {
+            background-color: blue;
+        }
+
+        #myDiv2 {
+            background-color: yellow;
+        }
+
+        #myDiv3 {
+            color: white;
+        }
+
+        #myDiv4 {
+            background-color: black;
+            color: white;
         }
     </style>
 </head>
@@ -18,18 +35,32 @@
         Hello world
     </div>
 
-    <div>
+    <div id="myDiv2">
         Hello world 2
     </div>
 
-    <div>
+    <div  id="myDiv3">
         Hello world 3
+    </div>
+
+    <div  id="myDiv4">
+        Hello world 4
     </div>
 
     <script>
         let myDiv = document.querySelector('#myDiv');
         myDiv.addEventListener('click', function () {
             myDiv.innerHTML = "Привіт світ";
+        })
+
+        let myDiv2 = document.querySelector('#myDiv2');
+        myDiv2.addEventListener('click', function () {
+            myDiv2.innerHTML = "Привіт світ 2";
+        })
+
+        let myDiv3 = document.querySelector('#myDiv3');
+        myDiv3.addEventListener('click', function () {
+            myDiv3.innerHTML = "Привіт світ 3";
         })
     </script>
     
