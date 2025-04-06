@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>04-04</title>
+</head>
+<body>
+    <h1>04-04 перетворення до числового типу</h1>
+
+    <script>
+        console.log('"100" + "10": ', "100" + "10"); // результат 10010 (для дії додавання рядок не перетворюється в число)
+        console.log('"100" - "10": ', "100" - "10"); // результат 90
+        console.log('"100" * "10": ', "100" * "10"); // результат 10000
+        console.log('"100" / "10": ', "100" / "10"); // результат 10
+
+        console.log('Number("111"): ', Number("111"));
+        console.log('Number("hello"): ', Number("hello"));
+        console.log('Number(null): ', Number(null));
+        console.log('Number(undefined): ', Number(undefined));
+        console.log('Number(true): ', Number(true));
+        console.log('Number(false): ', Number(false));
+        console.log('Number("   111   ") + 222: ', Number("   111   ") + 222);
+    </script>
+</body>
+</html>
